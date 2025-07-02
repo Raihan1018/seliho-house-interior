@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/icons8-house-48.png"
+      type="image/x-icon"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .serif {
+        font-family: "DM Serif Display", serif;
+      }
+      .jost {
+        font-family: "Jost", sans-serif;
+      }
+    </style>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      /** @type {import('tailwindcss').Config} */
+      module.exports = {
+        content: ["./src/**/*.{html,js}"],
+        theme: {
+          extend: {
+            color: {
+              primary: "#CDA274",
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+    <title>SELHONO | House</title>
+  </head>
+  <body>
+    <header class="container max-w-screen-xl mx-auto py-5">
+      <div class="flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center justify-center space-x-2">
+          <img src="./images/material-symbols-light_other-houses.svg" alt="" />
+          <span class="serif text-4xl uppercase">selhono</span>
+        </div>
+        <!-- Menu items -->
+        <nav>
+          <ul class="flex space-x-6">
+            <li>
+              <a
+                class="jost hover:text-[#C76904] transition-all duration-200 text-xl"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="jost hover:text-[#C76904] transition-all duration-200 text-xl"
+                href="#"
+                >Pages</a
+              >
+            </li>
+            <li>
+              <a
+                class="jost hover:text-[#C76904] transition-all duration-200 text-xl"
+                href="#"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                class="jost hover:text-[#C76904] transition-all duration-200 text-xl"
+                href="#"
+                >Project</a
+              >
+            </li>
+            <li>
+              <a
+                class="jost hover:text-[#C76904] transition-all duration-200 text-xl"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="jost hover:text-[#C76904] transition-all duration-200 text-xl"
+                href="#"
+                >Contact</a
+              >
+            </li>
+            <!-- search Icon -->
+            <div class="flex justify-center items-center ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                />
+              </svg>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>
