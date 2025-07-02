@@ -32,11 +32,7 @@
       module.exports = {
         content: ["./src/**/*.{html,js}"],
         theme: {
-          extend: {
-            color: {
-              primary: "#CDA274",
-            },
-          },
+          extend: {},
         },
         plugins: [],
       };
@@ -44,8 +40,8 @@
     <title>SELHONO | House</title>
   </head>
   <body>
-    <header class="container max-w-screen-xl mx-auto py-5 px-5 fixed z-50">
-      <div class="flex justify-between items-center">
+    <header class="container max-w-screen-xl mx-auto py-5 px-5">
+      <div class="flex justify-between items-center sticky z-50">
         <!-- Logo -->
         <div class="flex items-center justify-center space-x-2">
           <img src="./images/material-symbols-light_other-houses.svg" alt="" />
@@ -99,7 +95,7 @@
           </ul>
         </nav>
         <!-- search Icon -->
-        <div class=" justify-center items-center">
+        <div class="justify-center items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -117,5 +113,30 @@
         </div>
       </div>
     </header>
+
+    <!-- hero section -->
+    <section class="container max-w-screen-xl mx-auto py-5">
+      <div
+        class="bg-[url('https://plus.unsplash.com/premium_photo-1661765778256-169bf5e561a6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover bg-center h-[500px] w-full rounded-tl-3xl rounded-br-3xl p-10"
+      >
+        <h2 class="text-white text-3xl lg:text-5xl font-bold">
+          Let's make your <br />
+          home beautiful together
+        </h2>
+        <p class="text-white text-xl py-5">
+          There are many variations of the passages <br />of lorem Ipsum
+          fromavailable, majority.
+        </p>
+        <div>
+          <a href="#"
+            ><button
+              class="px-6 py-3 bg-[#CDA274] text-xl font-semibold rounded-xl hover:-translate-y-3 transition-all duration-200"
+            >
+              Get Started
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
   </body>
 </html>
