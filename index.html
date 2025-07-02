@@ -44,7 +44,7 @@
     <title>SELHONO | House</title>
   </head>
   <body>
-    <header class="container max-w-screen-xl mx-auto py-5">
+    <header class="container max-w-screen-xl mx-auto py-5 px-5 fixed z-50">
       <div class="flex justify-between items-center">
         <!-- Logo -->
         <div class="flex items-center justify-center space-x-2">
@@ -52,7 +52,7 @@
           <span class="serif text-4xl uppercase">selhono</span>
         </div>
         <!-- Menu items -->
-        <nav>
+        <nav class="hidden lg:flex">
           <ul class="flex space-x-6">
             <li>
               <a
@@ -96,25 +96,25 @@
                 >Contact</a
               >
             </li>
-            <!-- search Icon -->
-            <div class="flex justify-center items-center ">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="size-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                />
-              </svg>
-            </div>
           </ul>
         </nav>
+        <!-- search Icon -->
+        <div class=" justify-center items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+        </div>
       </div>
     </header>
   </body>
